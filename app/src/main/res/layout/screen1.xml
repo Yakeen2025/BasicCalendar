@@ -4,11 +4,10 @@
     android:layout_height="match_parent"
     android:id="@+id/rels">
 
-    <Switch
+    <ToggleButton
         android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/sw"
         android:layout_height="wrap_content"
-        android:text="BackGround Change"/>
+        android:id="@+id/sw"/>
+
 
 </RelativeLayout>

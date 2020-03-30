@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -23,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         calendarView=findViewById(R.id.cv);
         textView=findViewById(R.id.dv);
-        view=this.getWindow().getDecorView();
-        view.setBackgroundResource(R.color.red);
+        view=findViewById(R.id.rel);
 
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
@@ -53,9 +53,10 @@ public class MainActivity extends AppCompatActivity {
 
         }
         if(item.getItemId()==R.id.set){
-            Intent intent;
-            startActivity(new Intent(MainActivity.this,Screen1.class));
+            view.setBackgroundResource(R.drawable.ba);
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }

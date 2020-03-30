@@ -8,7 +8,7 @@
     <item
         app:showAsAction="never"
         android:id="@+id/set"
-        android:title="Settings"/>
+        android:title="Background Change"/>
 
 
 

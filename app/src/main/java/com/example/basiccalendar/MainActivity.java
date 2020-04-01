@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
         if(item.getItemId()==R.id.set){
-            view.setBackgroundResource(R.drawable.ba);
+            view.setBackgroundResource(R.drawable.cal);
         }
         return super.onOptionsItemSelected(item);
     }

@@ -1,4 +1,4 @@
-package com.example.basiccalendar;
+package com.example.Calendar;
 
 import android.content.ContentValues;
 import android.content.DialogInterface;
@@ -16,8 +16,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.basiccalendar.db.TaskContract;
-import com.example.basiccalendar.db.TaskDbHelper;
+import com.example.Calendar.db.TaskContract;
+import com.example.Calendar.db.TaskDbHelper;
 
 import java.util.ArrayList;
 
@@ -75,6 +75,7 @@ public class Screen extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+
     }
     public void deleteTask(View view) {
         View parent = (View) view.getParent();

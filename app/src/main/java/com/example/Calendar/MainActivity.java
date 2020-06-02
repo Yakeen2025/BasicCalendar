@@ -1,23 +1,25 @@
-package com.example.basiccalendar;
+package com.example.Calendar;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CalendarView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     CalendarView calendarView;
     TextView textView;
     View view;
+    private Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,8 +54,20 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this,Screen.class));
 
         }
-        if(item.getItemId()==R.id.set){
-            view.setBackgroundResource(R.drawable.cal);
+        switch (item.getItemId()) {
+            case R.id.b1:
+                view.setBackgroundResource(R.drawable.back1);
+
+                return true;
+            case R.id.b2:
+                view.setBackgroundResource(R.drawable.back2);
+                return true;
+            case R.id.b3:
+                view.setBackgroundResource(R.drawable.cal);
+                return true;
+            case R.id.b4:
+                view.setBackgroundResource(R.drawable.call);
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }

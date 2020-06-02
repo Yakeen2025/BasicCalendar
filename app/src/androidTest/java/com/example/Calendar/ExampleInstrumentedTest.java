@@ -1,4 +1,4 @@
-package com.example.basiccalendar;
+package com.example.Calendar;
 
 import android.content.Context;
 

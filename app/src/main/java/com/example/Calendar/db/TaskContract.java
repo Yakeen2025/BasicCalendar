@@ -1,4 +1,4 @@
-package com.example.basiccalendar.db;
+package com.example.Calendar.db;
 
 import android.provider.BaseColumns;
 
